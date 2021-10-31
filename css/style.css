@@ -1,0 +1,328 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.defaultpage{
+	background-color: #a2ca28;
+	padding: 40px;
+	color: white;
+}
+
+.info-blocks {
+  background-color: #a2ca28;
+  padding: 100px 0px;
+  color: #fff;
+}
+
+.dfdf {
+  background-color: orchid;
+}
+
+.header {
+  padding: 0px;
+}
+
+.info-blocks h4 {
+  font-size: 0.9rem;
+  padding: 10px 0px;
+}
+
+.info-blocks p {
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+}
+
+.info-blocks a {
+  font-size: 0.6rem;
+  color: #fff;
+}
+
+.info-blocks a::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f30b";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.content-blocks {
+  background-color: #a2ca28;
+}
+
+.content-red {
+  background-color: #fd634e;
+}
+
+.infosquare {
+  background-color: #fff;
+  padding: 40px 0px 30px 0px;
+}
+
+.infosquare h5 {
+  font-size: 0.7rem;
+  color: #fd634e;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.infosquare h3 {
+  color: #a2ca28;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.infosquare .icon {
+  color: #e3e9ea;
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.infosquare p {
+  padding: 10px 30px 0px 30px;
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+  color: #656e74;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.infosquare a {
+  font-size: 0.6rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #a2ca28;
+  padding: 10px 30px;
+}
+
+.infosquare-green {
+  background-color: #a2ca28;
+  color: #fff;
+  padding: 40px 0px 30px 0px;
+}
+
+.infosquare-green h5 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.infosquare-green h3 {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.infosquare-green p {
+  padding: 10px 30px 0px 30px;
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+/* Deze gebruik ik om borders om mijn blokken te zien maar moet je uitzetten uiteindelijk
+.row div {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+} */
+
+/* Hiermee zal elke afbeelding netjes de breedte van de kolom aannemen */
+.img-fluid {
+  max-width: auto;
+  width: 100%;
+}
+
+.img-fit {
+  object-fit: cover;
+/*
+  height: 100%;
+  width: 100%;
+*/
+}
+
+.icon {
+  font-size: 2.15rem;
+}
+
+.info-title h5,
+h3 {
+  text-align: left;
+}
+
+.title-icon {
+  display: flex;
+  padding: 0px 30px;
+}
+
+.icon-flex {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: #e0e7e4;
+  font-size: 1.8rem;
+}
+
+#align-left {
+  text-align: left;
+}
+
+.green-info {
+  background-color: #a2ca28;
+}
+
+.green-info h3 {
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  color: #fff;
+  padding: 57px 30px;
+  margin-bottom: -40px;
+}
+
+.green-info p {
+  color: #fff;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  padding: 0px 30px;
+}
+
+.header h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.header h3 {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.header-text {
+  position: absolute;
+  margin-top: -180px;
+  margin-left: 60px;
+}
+
+.header h1::after {
+  content: "/";
+  color: #a2ca28;
+}
+
+.header h3::after {
+  content: "/";
+  color: #fd634e;
+}
+
+.footer {
+  padding: 0;
+}
+
+.divider-block {
+  display: block;
+  background-color: #0d1119;
+/*  height: 800px;*/
+  clip-path: polygon(0 5%, 50% 12%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -96px;
+}
+
+.divider-arrow {
+  display: block;
+  background-color: #fd634e;
+/*  height: 800px;*/
+  clip-path: polygon(0 21%, 0 25%, 80% 26%, 28% 22%);
+  margin-top: -800px;
+}
+
+.footer-content {
+	background-color: black;
+	padding: 40px 40px 80px 40px;
+}
+
+.footer-content p {
+  color: #8297a7;
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
+
+.footer-content h3 {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.footer-content div:nth-child(2) {
+  padding-left: 10px;
+}
+
+.p-height {
+  height: 50%;
+  /* background-color: red; */
+}
+
+.social-icons img {
+  max-width: 20%;
+}
+
+input {
+  font-size: 0.6rem;
+  line-height: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+form {
+  padding-left: 10px;
+}
+
+#email {
+  width: 10vw;
+}
+
+input[type="submit"] {
+  background-color: #a2ca28;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+  .margin-lg {
+    margin-bottom: 80px;
+  }
+
+  .footer-content div:nth-child(2) {
+    padding-left: 0px;
+  }
+
+  .social-icons {
+    margin-bottom: 22px;
+  }
+
+  form {
+    padding-left: 0px;
+  }
+
+  input,
+  #email {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .social-icons a:nth-child(4) {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .margin-md {
+    margin-bottom: 80px;
+  }
+}
