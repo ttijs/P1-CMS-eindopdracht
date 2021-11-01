@@ -33,20 +33,29 @@
 							<span class="navbar-toggler-icon"></span>
 						</button>
 						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-							<div class="navbar-nav">
+							<!-- <div class="navbar-nav">
 								<a class="nav-item nav-link" href="#">ABOUT</a>
 								<a class="nav-item nav-link" href="#">HOW IT WORKS</a>
 								<a class="nav-item nav-link" href="#">SERVICES</a>
 								<a class="nav-item nav-link" href="#">FAQ</a>
 								<a class="nav-item nav-link" href="#">CONTACT</a>
-							</div>
+							</div> -->
+							<?php 
+							wp_nav_menu( 
+								array(
+									'theme_location' => 'hoofdmenu',
+									'menu_class' => 'navbar-nav'
+								)
+							)
+							?>
+
 						</div>
 					</nav>
 					<!-- EINDE NAVBAR -->
 					<img src="<?php bloginfo('template_url'); ?>/imgs/couple-exercising2.jpg" class='img-fluid img-fit' alt="Couple exercising">
 					<div class="header-text">
-						<h1>Fitness in a can</h1>
-						<h3>Yes you can</h3>
+						<h1><?php bloginfo('name'); ?></h1>
+						<h3><?php bloginfo('description'); ?></h3>
 					</div>
 				</div>
 			</div>
