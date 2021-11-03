@@ -82,6 +82,10 @@
 			</div>
 			
 			<aside class="col-4">
+				
+				<?php dynamic_sidebar( 'mijn-sidebar-widgets' ); ?>
+
+
 				<div class="infosquare">
 					<h5>It's all about</h5>
 					<h3>Fitness first</h3>
@@ -120,6 +124,11 @@
 
 
 	<footer>
+
+	<?php dynamic_sidebar( 'mijn-footer-widgets' ); ?>
+
+
+
 		<section class="container footer">
 			<div class="row no-gutters">
 				<img src="<?php bloginfo('template_url'); ?>/imgs/guy-watching-over-valley2.jpg" class='img-fluid img-fit' alt='Guy watching over valley'>
