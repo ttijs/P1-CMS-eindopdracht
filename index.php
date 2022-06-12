@@ -20,6 +20,10 @@ get_header();
 							the_post_thumbnail( 'thumbnail', ['class' => 'mijn-class', 'title' => get_the_title()] ); 
 						}
 						the_content();
+						//echo 'aaaaa' . get_the_ID();
+						echo 'de id van de extra image is ' . get_post_meta( get_the_ID(), '_listing_image_id', true );
+						echo '<br><br>';
+
 
 						?>
 						<a href="<?php the_permalink(); ?>">lees meer</a>
