@@ -32,6 +32,11 @@ function mijn_widgets_init() {
 add_action( 'widgets_init', 'mijn_widgets_init' );
 
 
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'sidebar-thumb', 120, 120, true ); // Hard Crop Mode
+add_image_size( 'homepage-thumb', 605, 605 ); // Soft Crop Mode
+add_image_size( 'singlepost-thumb', 590, 9999);
+
 
 /**
  * Register Custom Navigation Walker

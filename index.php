@@ -5,13 +5,20 @@ get_header();
 
 		<section class="row">
 			<div class="offset-1 col-7">
+
 				<?php
 				if(have_posts()){
 					while(have_posts()){
 						the_post();
 
-						the_title('<h1>','</h1>');
 
+						if (is_front_page()) {
+							the_post_thumbnail( 'homepage-thumb' ); 
+							the_title('<h1>','</h1>');
+						} else {
+							the_title('<h1>','</h1>');
+							the_post_thumbnail( 'thumbnail', ['class' => 'mijn-class', 'title' => get_the_title()] ); 
+						}
 						the_content();
 
 						?>

@@ -77,6 +77,7 @@
 
 					<!-- EINDE NAVBAR -->
 					<img src="<?php bloginfo('template_url'); ?>/imgs/couple-exercising2.jpg" class='img-fluid img-fit' alt="Couple exercising">
+
 					<div class="header-text">
 						<h1><?php bloginfo('name'); ?></h1>
 						<h3><?php bloginfo('description'); ?></h3>
