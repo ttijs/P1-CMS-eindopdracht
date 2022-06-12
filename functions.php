@@ -1,7 +1,7 @@
 <?php
 
 function mijnthema_menu() {
-    register_nav_menu( 'hoofdmenu', 'Het Hoofdmenu' );
+    register_nav_menu( 'mijn_custom_menu', 'Het Hoofdmenu' );
 }
 add_action('init', 'mijnthema_menu');
 
@@ -30,6 +30,16 @@ function mijn_widgets_init() {
 
 }
 add_action( 'widgets_init', 'mijn_widgets_init' );
+
+
+
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
 
 
 ?>

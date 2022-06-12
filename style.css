@@ -1,5 +1,5 @@
 /*
-Theme Name: Fitness
+Theme Name: Fitness van Thomas
 Author: Thomas T.
 */
 
@@ -18,17 +18,26 @@ is dat afhaneklijk van installatie-taal ???
 
 asdfadfasdf
 */
-
-
+/* 
 .navbar-nav ul {
   display: flex;
   list-style: none;
 }
-.menu-item a, .page_item a{
+*/
+
+.menu-item a, .page_item a {
   color: rgba(0, 0, 0, .5) !important;
   padding-right: .5rem;
   padding-left: .5rem;
   text-transform: uppercase;
+} 
+
+aside img {
+  width: 100%;
+  height: auto;
+}
+aside li {
+  list-style: none;
 }
 
 .current-menu-item a {
