@@ -13,11 +13,18 @@ get_header();
 
 
 						if (is_front_page()) {
-							the_post_thumbnail( 'homepage-thumb' ); 
+							the_post_thumbnail( 'homepage-thumb', ['style' => 'width: 100%', 'class' => 'home-page-mijn-class', 'title' => get_the_title()]  ); 
 							the_title('<h1>','</h1>');
 						} else {
 							the_title('<h1>','</h1>');
-							the_post_thumbnail( 'thumbnail', ['class' => 'mijn-class', 'title' => get_the_title()] ); 
+							// echo ' thumbnail' . "<br>";
+							// the_post_thumbnail( 'thumbnail', ['class' => 'mijn-class', 'title' => get_the_title()] ); 
+							// echo "<br><br>";
+							// echo ' medium' . "<br>";
+							the_post_thumbnail( 'medium', ['style' => 'float: right', 'class' => 'mijn-class', 'title' => get_the_title()] ); 
+							// echo "<br><br>";
+							// echo ' large' . "<br>";
+							// the_post_thumbnail( 'large', ['class' => 'mijn-class', 'title' => get_the_title()] ); 
 						}
 						the_content();
 
