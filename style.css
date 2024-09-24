@@ -282,6 +282,17 @@ body {
   margin-top: -800px;
 }
 
+.container.footer {
+  background-color: lightgray;
+
+}
+.container.footer li {
+  list-style-type: none;
+}
+.container.footer .widget {
+  padding: 30px;
+}
+
 .footer-content {
   background-color: black;
   padding: 40px 40px 80px 40px;
