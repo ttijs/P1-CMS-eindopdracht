@@ -1,8 +1,6 @@
 	<footer>
 
 
-
-
 		<section class="container footer">
 
 			<?php dynamic_sidebar('mijn-footer-widgets'); ?>
@@ -37,6 +35,10 @@
 					</div>
 				</div>
 			</div>
+
+			<?php wp_footer() ?>
+
+
 		</section>
 	</footer>
 
